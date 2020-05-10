@@ -4,7 +4,7 @@
 
 Overview
 ========
-This module provides a simple interface for communicating to a WTW_ &reg; MultiLine
+This module provides a simple interface for communicating to a WTW_® MultiLine
 portable meter. It uses pySerial_ to communicate over the serial connection. This
 module was created using a MultiLineIDS 3630 device for testing, however it is 
 likely that it will work with the other MultiLineIDS devices as well as the inoLab
@@ -13,7 +13,7 @@ devices.
 - Project Homepage: https://github.com/NFA/multiline
 
 
-WTW_ &reg; is a brand in the Xylem_ group, and I, the author of this script have
+WTW_® is a brand in the Xylem_ group, and I, the author of this script have
 no affiliation with either. I am just a researcher attempting to make my life
 in the lab easier.
 
