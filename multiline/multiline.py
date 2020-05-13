@@ -65,7 +65,7 @@ class MultiLineIDS:
         return self.is_open()
 
     def disconnect(self) -> bool:
-        print(f"Closing serial connection to MultiLine on {self.conf.port}.")
+        print(f"Closing serial connection to MultiLine on {self.con.port}.")
         self.con.close()
         return not self.is_open()
 
@@ -84,8 +84,8 @@ class MultiLineIDS:
                     line = buffer[:eol]
                     buffer = buffer[eol+2:]
                     print(line)
-                    #line = line.decode("cp1252")
-                    line = line.decode("utf-8")
+                    line = line.decode("cp1252")
+                    #line = line.decode("utf-8")
 
                     sensor_csv = line + "\n"
                     sensor_dict = parse_sensor(line)
