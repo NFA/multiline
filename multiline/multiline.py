@@ -3,7 +3,7 @@ from pathlib import Path
 
 import serial
 
-from sensors import parse_sensor
+from multiline.sensors import parse_sensor
 
 class MultiLineIDS:
     """ 

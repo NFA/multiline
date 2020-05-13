@@ -47,6 +47,9 @@ def sensor_data(date, quantity, value, unit,
     temp, temp_unit,
     sensor_info, sensor_name, sensor_id, 
     instrument_name, instrument_id):
+    """
+    Single exit point of data to ensure uniform dict structure. 
+    """
     return {"date": date,
         "quantity": quantity, "value": value, "unit": unit,
         "temp": temp, "temp_unit": temp_unit,
