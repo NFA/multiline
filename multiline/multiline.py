@@ -83,9 +83,7 @@ class MultiLineIDS:
                 if (eol := buffer.find(b"\r\n")) != -1:
                     line = buffer[:eol]
                     buffer = buffer[eol+2:]
-                    print(line)
                     line = line.decode("cp1252")
-                    #line = line.decode("utf-8")
 
                     sensor_csv = line + "\n"
                     sensor_dict = parse_sensor(line)
